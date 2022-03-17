@@ -4,7 +4,7 @@
 
 - 📫 How to reach me **biassonfederico@gmail.com**
 
-- 📄 Know about my experiences [github.com/biasson98](github.com/biasson98)
+- 📄 Know about my experiences [https://github.com/biasson98](https://github.com/biasson98)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
