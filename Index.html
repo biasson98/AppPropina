@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/sweetalert2@9.5.3/dist/sweetalert2.all.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <!-- Estilos CSS -->
+    <style>
+         h1,
+      h4,
+      h5 {
+        color:black;
+        font-size: 25px;
+      }
+      h2{
+        text-align: center;
+        font-size: 40px;
+      }
+      h3{
+        
+        font-size: 25px;
+      }
+      .fotito_plato {
+        height: 100px;
+        width: 100px;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .platos {
+        background-color: rgba(1, 1, 1, 0.5);
+        width: 150%;
+        height: 60vh;
+        text-align: center;
+      }
+    
+      .orden {
+        background-color: rgba(1, 1, 1, 0.5);
+        height: 60vh;
+        width: 30%;
+        text-align:right;
+      }
+
+      hr {
+        width: 80%;
+      }
+
+      body {
+        background-size:cover;
+       
+      }
+
+      .carta_de_ordenes {
+        color: white;
+      }
+
+      .carta_de_comida {
+        background-color: aliceblue;
+        width: 350px;
+        height: 70px;
+        border-radius: 15px;
+        margin: 10px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      #agregar_a_orden {
+        background-color: hsl(0, 93%, 34%);
+        border: none;
+        padding: 8px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      #boton_limpiar{
+        background-color: hsl(0, 93%, 34%);
+        margin: 10px;
+        padding: 10px;
+        border: none;
+        padding: 8px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      #fin_orden{
+        background-color: hsl(0, 93%, 34%);
+        margin: 10px;
+        padding: 10px;
+        border: none;
+        padding: 8px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      #boton-click{
+        background-color: #2ed234;
+        border: none;
+        margin: 5px;
+        padding: 8px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      #ordenes_agregadas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-height: 30vh;
+        overflow-y: scroll;
+      }
+
+      .total_de_orden {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      #propina_sugerida,
+      #precio_total {
+        background-color: #bf0808;
+        padding: 5px;
+        margin: 10px;
+      }
+    
+    </style>
+    <title>App de Propinas</title>
+    
+</head>
+
+<body>
+<div class="container">
+    <section id="platos">
+        <h2>Platos</h2>
+        <div id="comidas"></div>
+    </section>
+    <section class="order" id="orden">
+        <h2>Orden</h2>
+        <ul id= "ordenes_agregadas">
+          <ul id="platos"></ul>
+        </ul>
+        <hr>
+        <div class="total_de_orden">
+            <h4>Precio Total</h4>
+            <h3 id="precio_total"></h3>
+            <h5 id>Propina Sugerida 10%</h5>
+            <h5 id="propina_sugerida"></h5>
+            <button id="boton_limpiar">Limpiar Orden</button>
+            <button id="fin_orden">Finalizar Orden</button>
+        </div>
+    </section>
+
+</div> 
+    <script src="jquery3.5.1.min.js"></script>
+    <script src="main.js"></script>
+    </body>
+</html> 
+
+
